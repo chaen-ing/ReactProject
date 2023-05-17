@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { createRoot } from "react-dom/client";
@@ -8,12 +9,13 @@ import Library from './ch_03/Library';
 import Clock from './ch_04/Clock';
 import CommentList from './ch_05/CommentList';
 import NotificationList from './ch_06/NotificationList';
+import Accommodate from './ch_07/Accommodate';
 
-const root = createRoot(document.getElementById("root"));
 
-root.render(
+
+ReactDOM.render(
   <React.StrictMode>
-    <NotificationList/>
+    <Accommodate/>
   </React.StrictMode>,
   document.getElementById('root')
 );
